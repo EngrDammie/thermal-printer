@@ -1,0 +1,5 @@
+pybluez>=0.23
+pillow>=10.0
+qrcode[pil]>=7.0
+python-barcode>=0.15
+click>=8.0

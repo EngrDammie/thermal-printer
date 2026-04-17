@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thermal-printer"
+version = "0.1.0"
+description = "CLI tool for printing to Bluetooth thermal printers"
+authors = [{name = "User"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pybluez>=0.23",
+    "pillow>=10.0",
+    "qrcode[pil]>=7.0",
+    "python-barcode>=0.15",
+    "click>=8.0",
+]
+
+[project.scripts]
+thermal-print = "thermal_printer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
