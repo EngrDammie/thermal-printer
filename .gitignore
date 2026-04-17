@@ -1,12 +1,1 @@
-github_repo_token
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Config (personal)
-.thermal_printer.json
-
-# Temp/test data
-*.txt
+github_repo_token.txt
